@@ -5,26 +5,10 @@ using namespace std ;
 #define vi vector<int>
 #define ld long double
 #define pb push_back 
+#define REP(i,a,b) for(int i = a ; i < b ; i++)
 #define all(c) (c).begin(), (c).end()
 
-void solve(){
-	vi a ; 
-	int size ;
-    cout << "Hello world"; 
-	cin>> size ; 
-	for(int i = 0 ; i < size ; i++){
-		int ele ;
-		cin>> ele ;
-		a.pb(ele); 
-	}
-	int sum = 1e-9 ;
-	int best = 1e-9 ; 
-	for(auto& it : a){
-		sum = max(it , sum+it) ; 
-		cout<< sum << " " ;
-		best = max(best,sum);
-	}
-	cout<<best;
+void mergeSort(){
 
 }
 int main(){
@@ -35,5 +19,5 @@ int main(){
    freopen("input.txt", "r", stdin); 
    freopen("output.txt", "w", stdout); 
    #endif 
-   solve(); 
+   mergeSort(); 
 }

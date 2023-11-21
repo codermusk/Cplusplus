@@ -1,0 +1,1 @@
+{"name":"Local: basic","url":"/Users/bharathkumar/c++/basic.cpp","tests":[{"id":1695653076533,"input":"10","output":"\"hello world\""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/bharathkumar/c++/basic.cpp","group":"local","local":true}
