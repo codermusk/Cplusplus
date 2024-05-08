@@ -1,3 +1,12 @@
+/*bubble sort 
+merge sort
+quick sort
+heap sort
+radix sort
+cyclic sort
+insertion sort
+counting sort */
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std ;
@@ -9,26 +18,18 @@ using namespace std ;
 #define all(c) (c).begin(), (c).end()
 
 void solve(){
-   int val ; 
-   cin >> val ; 
-   ll pal =  0, temp = val;
-   while(val>0){
-      int number = val%10 ;
-      pal = number+pal*10;
-      val/=10;
-   }
-
-   if(pal == temp) cout<< "It is a Palindrome";
-   else cout << "It is not a Palindrome" ; 
 
 }
 int main(){
- 
+
    ios_base::sync_with_stdio(false);
    cin.tie(NULL); 
    #ifndef ONLINE_JUDGE 
    freopen("input.txt", "r", stdin); 
-   freopen("output.txt", "w", stdout); 
+   freopen("output.txt", "w", stdout);
    #endif 
-   solve();
+   int tc ; 
+   cin>> tc ; 
+   REP(i,0,tc)
+   solve(); 
 }

@@ -177,8 +177,59 @@ void algorithms(){
 }
 
 
+void implementLowerBound() {
+	vi vec{1,2,3,4,52143,2343,3243,4345} ; 
+	int element = 23454 ; 
+	int low = 0  , high = vec.size()-1  , ans = vec.size() ;
+	while(low<=high){
+		int mid = (low+high)/2;
+		if(vec[mid]>=element){
+			ans = mid ;
+			high = mid - 1 ;
+		}else{
+			low = mid+1 ; 
+		}
+	}
+
+	return ans ; 
+
+}
 
 
+void implementUpperBound() {
+	vi vec{1,2,3,4,52143,2343,3243,4345} ; 
+	int element = 23454 ; 
+	int low = 0  , high = vec.size()-1  , ans = vec.size() ;
+	while(low<=high){
+		int mid = (low+high)/2;
+		if(vec[mid]>element){
+			ans = mid ;
+			high = mid - 1 ;
+		}else{
+			low = mid+1 ; 
+		}
+	}
+
+	return ans ; 
+
+}
+
+void binarySearch(){
+	vi vec{1,2,3,4,52143,2343,3243,4345} ; 
+	int element = 23454 ; 
+	int low = 0  , high = vec.size()-1  , ans = vec.size() ;
+	while(low<=high){
+		int mid = (low+high)/2;
+		if(vec[mid]>element){
+			high = mid - 1 ;
+		}elseif(vec[mid]<element){
+			low = mid+1 ; 
+		}elseif(vec[mid]==element) return ans ;
+	}
+
+	return ans ; 
+
+}
 
 int main(){
 	//ios base sync with studio is used to read input and output faster
