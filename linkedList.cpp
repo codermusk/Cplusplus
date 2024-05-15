@@ -169,7 +169,7 @@ int main()
 	list.deleteNode(2); 
 
 	cout << "Elements of the list are: "; 
-	list.printList(); 
+	list.printList();
 	cout << endl; 
 	return 0; 
 }
