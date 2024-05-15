@@ -13,7 +13,7 @@ public:
             if(max_value < curr_value){
                 ans1 = i ; 
                 ans2 = j ; 
-                curr_value = max_value ;
+                max_value = curr_value ;
             }
             i++;
         }
