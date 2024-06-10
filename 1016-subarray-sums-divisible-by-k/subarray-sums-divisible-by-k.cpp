@@ -5,11 +5,9 @@ public:
         unordered_map<int , int > cntoc ; 
         cntoc[0] = 1 ; 
         for(auto it: nums){
-            presum+=it ;
-            int mod = presum % k ; 
-            if(mod < 0) mod+=k ; 
-            ans+=cntoc[mod];
-            cntoc[mod]++;
+            presum = (presum+it%k +k)%k ;
+            ans+=cntoc[presum];
+            cntoc[presum]++;
         }  
         return ans ;
     }
